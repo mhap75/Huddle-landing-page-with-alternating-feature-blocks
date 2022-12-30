@@ -53,6 +53,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mhap75](https://www.frontendmentor.io/profile/mhap75)
+- Twitter - [@mhamirpanahi](https://www.twitter.com/mhamirpanahi)
