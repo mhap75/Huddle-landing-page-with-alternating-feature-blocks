@@ -1,0 +1,126 @@
+@import "resources";
+@import "variables";
+@import "utilities";
+
+//Reset CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $primary-pink;
+        font-weight: 700;
+    }
+}
+
+body {
+    font-family: $open-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $poppins;
+    font-weight: 600;
+    margin-block: 1.5rem
+}
+
+button {
+    @extend %btn;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+// Custom styles
+
+body {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: $neutral-vd-cyan;
+}
+
+#header_main {
+    min-height: 80dvh;
+    background-color: $neutral-vp-cyan;
+    background-image: url("../image/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+#btn_try-free {
+    background-color: $white;
+}
+
+.btn_get-started {
+    background-color: $primary-pink;
+    color: $white;
+}
+
+.header_content {
+    &_left {
+        padding-right: 7rem;
+        
+        > * {
+        margin-block: 1.2rem;
+        }
+    }
+    &_right {
+        flex-grow: 1.2;
+    }
+}
+footer {
+    background-color: $neutral-vd-cyan;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    color: $neutral-vp-cyan;
+    font-size: 0.9rem;
+    position: relative;
+    margin-top: 10rem;
+}
+
+.footer {
+    .logo {
+        svg path {
+            fill: $white;
+        }
+    }
+
+    &_content {
+        display: grid;
+        grid-template-columns: 1.4fr repeat(3, 1fr);
+        place-content: center;
+
+        i {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@import "media";

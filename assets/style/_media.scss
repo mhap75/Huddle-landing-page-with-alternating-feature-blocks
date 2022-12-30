@@ -1,0 +1,50 @@
+@media (max-width: 850px) {
+    header,
+    section {
+        text-align: center !important;
+    }
+
+    #header_top {
+        > * {
+            font-size: 50%;
+        }
+
+        picture {
+            width: 40%;
+        }
+    }
+
+    .header_content {
+        flex-direction: column;
+
+        &_left {
+            padding-inline: 0;
+        }
+    }
+
+    .card-border {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    article {
+        padding-inline: 0 !important;
+    }
+
+    .footer_content {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+    }
+
+    .icon-holder {
+        justify-content: center;
+    }
+
+    #copyright {
+        text-align: center !important;
+    }
+
+    .btn-floating {
+        top: -15%;
+    }
+}
